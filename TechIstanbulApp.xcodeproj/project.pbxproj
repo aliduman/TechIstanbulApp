@@ -11,6 +11,8 @@
 		F1DF81802C0797B3004F5471 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF817F2C0797B3004F5471 /* ContentView.swift */; };
 		F1DF81822C0797B4004F5471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1DF81812C0797B4004F5471 /* Assets.xcassets */; };
 		F1DF81852C0797B4004F5471 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1DF81842C0797B4004F5471 /* Preview Assets.xcassets */; };
+		F1DF818D2C0797F8004F5471 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF818C2C0797F8004F5471 /* TodoItem.swift */; };
+		F1DF81902C079857004F5471 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF818F2C079857004F5471 /* TodoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		F1DF817F2C0797B3004F5471 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1DF81812C0797B4004F5471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1DF81842C0797B4004F5471 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1DF818C2C0797F8004F5471 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		F1DF818F2C079857004F5471 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		F1DF817C2C0797B3004F5471 /* TechIstanbulApp */ = {
 			isa = PBXGroup;
 			children = (
+				F1DF818E2C079844004F5471 /* ViewModel */,
+				F1DF818B2C0797DA004F5471 /* Model */,
 				F1DF817D2C0797B3004F5471 /* TechIstanbulAppApp.swift */,
 				F1DF817F2C0797B3004F5471 /* ContentView.swift */,
 				F1DF81812C0797B4004F5471 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				F1DF81842C0797B4004F5471 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1DF818B2C0797DA004F5471 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1DF818C2C0797F8004F5471 /* TodoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1DF818E2C079844004F5471 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1DF818F2C079857004F5471 /* TodoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1DF81902C079857004F5471 /* TodoViewModel.swift in Sources */,
 				F1DF81802C0797B3004F5471 /* ContentView.swift in Sources */,
+				F1DF818D2C0797F8004F5471 /* TodoItem.swift in Sources */,
 				F1DF817E2C0797B3004F5471 /* TechIstanbulAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +299,14 @@
 				DEVELOPMENT_TEAM = 9MR5WQYD43;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TechTodo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +331,14 @@
 				DEVELOPMENT_TEAM = 9MR5WQYD43;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TechTodo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
